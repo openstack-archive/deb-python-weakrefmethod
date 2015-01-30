@@ -2,7 +2,7 @@ import weakref
 
 __all__ = ['WeakMethod']
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 
 class WeakMethod(weakref.ref):
