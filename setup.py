@@ -1,20 +1,18 @@
-from setuptools import setup
-from codecs import open
-from os import path
-from weakrefmethod import __version__
+import io
+import os
+from setuptools import setup, find_packages
 
-here = path.abspath(path.dirname(__file__))
-with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
-    long_description = f.read()
-
-URL = 'http://pypi.python.org/pypi/weakrefmethod'
+version = io.open('weakrefmethod/_version.py').readlines()[-1].split()[-1].strip('"\'')
 
 setup(
     name='weakrefmethod',
-    version=__version__,
+    version=version,
     description='A WeakMethod class for storing bound methods using weak references.',
-    long_description=long_description,
-    py_modules=['weakrefmethod'],
+    long_description=io.open('DESCRIPTION.rst', encoding='utf-8').read(),
+    packages=find_packages(),
+    include_package_data=True,
+    url='http://github.com/twang817/weakrefmethod',
+    download_url='https://github.com/twang817/weakrefmethod/tarball/{version}'.format(version=version),
     author='Tommy Wang',
     author_email='twang@august8.net',
     license='PSF',
@@ -31,7 +29,6 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     keywords='weakref WeakMethod',
-    url='http://pypi.python.org/pypi/weakrefmethod',
     tests_require=['unittest2'],
     test_suite='test_weakmethod',
 )
