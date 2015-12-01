@@ -1,2 +1,2 @@
-from _version import __version__
-from weakrefmethod import WeakMethod
+from ._version import __version__
+from .weakrefmethod import WeakMethod
