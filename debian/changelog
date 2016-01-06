@@ -1,4 +1,4 @@
-python-weakrefmethod (1.0.0-1) unstable; urgency=medium
+python-weakrefmethod (1.0-1) unstable; urgency=medium
 
   * Initial release. (Closes: #810082)
 
