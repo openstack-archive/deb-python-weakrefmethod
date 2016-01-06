@@ -1,0 +1,5 @@
+python-weakrefmethod (1.0.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #810082)
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 29 Dec 2015 10:33:05 +0100

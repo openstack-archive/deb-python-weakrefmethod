@@ -1,0 +1,24 @@
+Source: python-weakrefmethod
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-setuptools,
+               python-all,
+Build-Depends-Indep: python-unittest2
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-weakrefmethod.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-weakrefmethod.git
+Homepage: http://github.com/twang817/weakrefmethod
+
+Package: python-weakrefmethod
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: WeakMethod class for storing bound methods using weak references
+ Python 3.4 include a WeakMethod class, for storing bound methods using weak
+ references (see the Python weakref module at
+ http://docs.python.org/library/weakref.html).
+ .
+ This project is a backport of the WeakMethod class for Python 2.7.
