@@ -46,10 +46,6 @@ class WeakMethod(weakref.ref):
         return False
 
     def __ne__(self, other):
-        if isinstance(other, WeakMethod):
-            if not self._alive or not other._alive:
-                return self is not other
-            return weakref.ref.__ne__(self, other) or self._func_ref != other._func_ref
-        return True
+        return not self.__eq__(other)
 
     __hash__ = weakref.ref.__hash__

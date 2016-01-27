@@ -31,4 +31,7 @@ setup(
     keywords='weakref WeakMethod',
     tests_require=['unittest2'],
     test_suite='test_weakmethod',
+    extra_requires={
+        'test': ["tox"]
+    }
 )
