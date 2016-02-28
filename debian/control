@@ -11,7 +11,7 @@ Build-Depends-Indep: python-unittest2
 Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-weakrefmethod.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-weakrefmethod.git
-Homepage: http://github.com/twang817/weakrefmethod
+Homepage: https://github.com/twang817/weakrefmethod
 
 Package: python-weakrefmethod
 Architecture: all
