@@ -2,7 +2,7 @@ import io
 import os
 from setuptools import setup, find_packages
 
-version = io.open('weakrefmethod/_version.py').readlines()[-1].split()[-1].strip('"\'')
+version = io.open('weakrefmethod/_version.py',encoding='ascii').readlines()[-1].split()[-1].strip('"\'')
 
 setup(
     name='weakrefmethod',
