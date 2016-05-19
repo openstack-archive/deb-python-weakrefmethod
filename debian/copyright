@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: weakrefmethod
-Source: http://github.com/twang817/weakrefmethod
+Source: https://github.com/twang817/weakrefmethod
 
 Files: debian/*
 Copyright: (c) 2016, Thomas Goirand <zigo@debian.org>
