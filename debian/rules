@@ -2,7 +2,7 @@
 
 PYTHONS:=$(shell pyversions -vr)
 
-UPSTREAM_GIT = git://github.com/twang817/weakrefmethod.git
+UPSTREAM_GIT := https://github.com/twang817/weakrefmethod.git
 -include /usr/share/openstack-pkg-tools/pkgos.make
 
 %:
